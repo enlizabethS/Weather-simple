@@ -10,11 +10,22 @@ function getweatherByCode(code){
         case 0:
             return "Clear sky";
             case 1:
+                return "Mainly clear";
             case 2: 
+            return "Partly cloudyr";
             case 3:
-                return "Mainly clear, partly cloudy, and overcast";
-            case 42,48:
-                return "Fog and depositing rime fog";
+                return "Overcast";
+            case 42:
+                return "Fog";
+                case 48:
+                    return "Depositing rime fog";
+                    //61, 63, 65	
+                 case 61: 
+                 return "Slight rain";
+                 case 63:
+                    return "Moderate rain, moderate and heavy intensity";
+                    case 65:
+                        return "Heavy intensity rain";
             default:
             return " - ";
 }
